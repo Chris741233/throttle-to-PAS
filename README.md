@@ -7,11 +7,11 @@ Code pour Aduino Nano/Uno<br>
 Schéma et documentation voir DOC
 
 <p align="center">
-  <img src="./DOC/throttle-diagram.png" width="400" title="Arduino pinout">
+  <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinout">
 </p>
 
 <p align="center">
-  <img src="./DOC/oscillo_60rpm.jpg" width="500" title="Oscillo">
+  <img src="./DOC/oscillo_60rpm.jpg" width="800" title="Oscillo">
 </p>
 
 Discussion sur le forum Cyclurba : <br>
