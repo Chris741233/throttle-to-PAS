@@ -26,7 +26,7 @@ Discussion sur le forum Cyclurba : <br>
 
 <p></p>
 
-<p><i>
+<p style="color:DodgerBlue;"><i>
 Attention: La réglementation de certains pays n'autorise pas l'utilisation d'un accélérateur à plus de 6 km/h sans pédaler.<br>
 L'utilisation de ce code et schéma sont sous votre propre responsabilité ! 
 <br><br>
