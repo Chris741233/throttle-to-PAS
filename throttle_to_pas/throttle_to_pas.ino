@@ -2,11 +2,13 @@
 Created with PROGRAMINO IDE for Arduino - 17.05.2023 | 10:21:23
 Project     :
 Libraries   :
-Author      :  CHRIS
-Description :  e-bike throttle to PAS - Arduino Uno/Nano (code 1)
+Author      :  Chris741233
+
+Description :  e-bike throttle to PAS - Arduino Uno/Nano
 - Simulation pedalage et envoi au controleur
 - code1 avec millis() et While
 
+Download code on Github : https://github.com/Chris741233/throttle-to-PAS
 
 Doc PAS ebikes.ca (Signal Types for Basic PAS Sensors) : 
 - https://ebikes.ca/learn/pedal-assist.html
