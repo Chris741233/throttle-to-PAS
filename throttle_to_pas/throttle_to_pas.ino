@@ -90,9 +90,10 @@ void setup() {
     // -- Interruption : appel "isr_pas" sur signal CHANGE  
     attachInterrupt(digitalPinToInterrupt(PAS_PIN), isr_pas, CHANGE); 
     
-    // tuto interrupt : https://gcworks.fr/tutoriel/arduino/Lesinterruptions.html
     
     // attention, ne pas mettre d'instruction "delay" ici (et dans le loop egalement) !
+    // no delay() here !
+    
 }
 
 
@@ -103,7 +104,6 @@ void loop()
     
     
     // map val : Plus on appuie sur le throttle plus le signal PAS high doit etre court !
-    // fonction map voir : https://reference.arduino.cc/reference/en/language/functions/math/map/ 
     int duty = map(val, tr_min+tr_marge, tr_max-tr_marge, slow_pas, fast_pas);
     
     //Serial.println(duty);             // debug duty
@@ -133,6 +133,9 @@ void loop()
         }
     }
     else throt_on = false;
+    
+    
+    // No delay() here !
     
 } // end loop
 
