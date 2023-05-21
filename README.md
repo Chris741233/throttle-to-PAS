@@ -7,4 +7,4 @@ Code pour Aduino Nano/Uno
 
 Schéma et documentation voir DOC
 
-Discussion sur le forum Cyclurba : https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87&pageprec=
+Discussion sur le forum Cyclurba : https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87
