@@ -6,12 +6,12 @@ Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un 
 Code pour Aduino Nano/Uno<br>
 Schéma et documentation voir DOC
 
-<p align="center">
+<p align="left">
   <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinout">
 </p>
 
-<p align="center">
-  <img src="./DOC/oscillo_60rpm.jpg" width="800" title="Oscillo">
+<p align="left">
+  <img src="./DOC/oscillo_60rpm.jpg" width="700" title="Oscillo">
 </p>
 
 Discussion sur le forum Cyclurba : <br>
