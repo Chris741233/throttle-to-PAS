@@ -2,7 +2,7 @@
 Created with PROGRAMINO IDE for Arduino - 17.05.2023 | 10:21:23
 Project     :
 Libraries   :
-Author      :  Chris741233
+Author      :  Chris74
 
 Description :  e-bike throttle to PAS - Arduino Uno/Nano
 - Simulation pedalage et envoi au controleur
