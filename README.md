@@ -1,2 +1,2 @@
 # throttle-to-PAS
-E-bike throttle PAS simulation  and replication
+Arduino e-bike throttle PAS simulation and replication
