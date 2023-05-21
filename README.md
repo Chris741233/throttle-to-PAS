@@ -15,10 +15,11 @@ Schéma et documentation voir DOC
 </p>
 
 <p>
+Doc on ebikes.ca : <br>
  <a href="https://ebikes.ca/learn/pedal-assist.html">Signal Types for Basic PAS Sensors</a> 
 </p>
 
 <p>
 Discussion sur le forum Cyclurba : <br>
-https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87
+ <a href="https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87">Cyclurba</a> 
 </p>
