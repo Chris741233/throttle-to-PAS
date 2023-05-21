@@ -23,3 +23,13 @@ Doc on ebikes.ca : <br>
 Discussion sur le forum Cyclurba : <br>
  <a href="https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87">Cyclurba</a> 
 </p>
+
+<p></p>
+
+<p>
+Attention: La réglementation de certains pays n'autorise pas l'utilisation d'un accélérateur à plus de 6 km/h sans pédaler.<br>
+L'utilisation de ce code et schéma sont sous votre propre responsabilité ! 
+<br><br>
+Warning: The regulations of some countries do not allow the use of an accelerator at more than 6 km/h without pedaling.<br>
+The use of this code and diagram is under your own responsibility!
+</p>
