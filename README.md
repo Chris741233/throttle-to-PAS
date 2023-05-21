@@ -10,5 +10,5 @@ Schéma et documentation voir DOC
   <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinout">
 </p>
 
-Discussion sur le forum Cyclurba :
- https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87
+Discussion sur le forum Cyclurba : <br>
+https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87
