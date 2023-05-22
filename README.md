@@ -20,7 +20,7 @@ Utilisation : Régler les constantes en début de code
 </p>
 
 <p align="left">
-  <img src="./DOC/debug_val_throttle" width="500" title="Arduino pinout">
+  <img src="./DOC/debug_val_throttle.jpg" width="500" title="Arduino pinout">
 </p>
 
 <p align="left">
