@@ -7,6 +7,7 @@ Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un 
 ---
 
 Utilisation : Régler les constantes en début de code
+<br> Adjust constants at the beginning of code
 
 - Calibrer les  min et max throttle en décommentant la ligne "Serial" dans le loop (le recommenter après)
 - Ajuster le marge de déclenchement "tr_marge"
