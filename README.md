@@ -4,6 +4,8 @@ Arduino e-bike throttle PAS simulation and replication
 Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un pédalage sur un e-bike
 <br> Code pour Aduino Nano/Uno
 
+---
+
 Utilisation : Régler les constantes en début de code
 
 - Calibrer les  min et max throttle en décommentant la ligne "Serial" dans le loop (le recommenter après)
