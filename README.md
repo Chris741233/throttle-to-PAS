@@ -20,6 +20,10 @@ Utilisation : Régler les constantes en début de code
 </p>
 
 <p align="left">
+  <img src="./DOC/debug_val_throttle" width="500" title="Arduino pinout">
+</p>
+
+<p align="left">
   <img src="./DOC/oscillo_60rpm.jpg" width="700" title="Oscillo">
 </p>
 
