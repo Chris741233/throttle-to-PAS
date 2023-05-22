@@ -14,6 +14,10 @@ Schéma et images voir DOC
   <img src="./DOC/oscillo_60rpm.jpg" width="700" title="Oscillo">
 </p>
 
+<p align="left">
+  <img src="./DOC/PAS_Signal_Levels.jpg" width="700" title="Oscillo">
+</p>
+
 <p>
 Doc on ebikes.ca : <br>
  <a href="https://ebikes.ca/learn/pedal-assist.html">Signal Types for Basic PAS Sensors</a> 
