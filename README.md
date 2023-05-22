@@ -3,7 +3,15 @@ Arduino e-bike throttle PAS simulation and replication
 
 Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un pédalage sur un e-bike
 
-Code pour Aduino Nano/Uno<br>
+Code pour Aduino Nano/Uno
+
+Utilisation : Régler les constantes en début de code
+
+- Calibrer les  min et max throttle en décommentant la ligne "Serial" dans le loop (le recommenter après)
+- Ajuster le marge de déclenchement "tr_marge"
+- Choisir le nb. d'aimants sur votre disque de PAS 
+- Choisir les RPM min et et max de simulation de pédalage (valable seulement si le controleur accèpte un PAS proportionel)
+- Adapter le duty-cycle high selon votre modèle de PAS (A ou B, voir plus bas)
 
 
 <p align="left">

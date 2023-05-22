@@ -37,10 +37,10 @@ const int LED_PIN = 13;  // -- LED et CONTROLER in (D13 = LED_BUILTIN)
 // -- reglages throttle (cf debug Serial dans le loop) 
 const int   tr_min    = 220;    // throttle min - marge ajoutee dans map() 
 const int   tr_max    = 856;    // throttle max - marge deduite dans map()
-const int   tr_marge  = 15;     // marge throttle avant envois signal PWM  et en deduction de tr_max  
+const int   tr_marge  = 15;     // marge (margin) throttle avant envois signal PWM  et en deduction de tr_max  
 
 // -- reglages nb. d'aimants et simulation RPM pedalage
-const int   nb_poles  = 6;      // nb. d'aimants (pulse) sur le disque du PAS
+const int   nb_poles  = 6;      // nb. d'aimants (nb. of magnets) sur le disque du PAS
 const int   slow_rpm  = 30;     // simulation RPM pedalier min
 const int   fast_rpm  = 70;     // simulation RPM pedalier max
 
