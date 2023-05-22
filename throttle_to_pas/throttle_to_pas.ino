@@ -6,7 +6,6 @@ Author      :  Chris74
 
 Description :  e-bike throttle to PAS - Arduino Uno/Nano
 - Simulation pedalage et envoi au controleur
-- code1 avec millis() et While
 
 Download code on Github : https://github.com/Chris741233/throttle-to-PAS
 
@@ -16,6 +15,9 @@ Doc PAS ebikes.ca (Signal Types for Basic PAS Sensors) :
 Cyclurba (Soupaloignon) : 
 - https://cyclurba.fr/forum/741850/arduino-l-assistance-d-un-vae.html?from=11&discussionID=31032&messageID=741850&rubriqueID=87
 - https://cyclurba.fr/forum/738995/fonctionnent-capteurs-pn-dalage.html?discussionID=5512
+
+Other source : Pedelecs forum 
+- https://www.pedelecs.co.uk/forum/threads/how-to-add-a-throttle-to-a-carrera-vengeance-e-spec.31483/
 
 
 ******************************************************************/
@@ -126,7 +128,7 @@ void loop()
         while (millis() - start <= duty) {
             if (val > tr_min + tr_marge) digitalWrite(LED_PIN, HIGH);
         }
-        // Signal low (ratio : duty doit etre inf. a high)
+        // Signal low ( ratio calcule dans constantes)
         start = millis();
         while (millis() - start <= duty / ratio_low) {
             if (val > tr_min + tr_marge) digitalWrite(LED_PIN, LOW);
