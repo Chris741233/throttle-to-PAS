@@ -1,5 +1,6 @@
 # throttle-to-PAS
-Arduino e-bike throttle PAS simulation and replication
+Arduino e-bike throttle PAS simulation and replication<br>
+Using a throttle (thumb throttle or accelerator) to simulate pedaling on an e-bike
 
 Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un pédalage sur un e-bike
 <br> Code pour Aduino Nano/Uno, etc ... (signal +5V)
