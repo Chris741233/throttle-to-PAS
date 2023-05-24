@@ -19,7 +19,7 @@ Adjust constants at the beginning of code
 - Adapter le duty-cycle high "duty_cycle" selon votre modèle de PAS (A ou B, voir plus bas)
 - That's all ;)
 
-**Pinouts**
+**Wiring (Arduino Uno/Nano)**
 <p align="left">
   <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinout">
 </p>
