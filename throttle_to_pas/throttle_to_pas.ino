@@ -7,12 +7,16 @@ Author      :  Chris74
 Description :  e-bike throttle to PAS - Arduino Uno/Nano
 - Simulation pedalage et envoi au controleur
 
-Download code on Github : https://github.com/Chris741233/throttle-to-PAS
+Code and info on Github : https://github.com/Chris741233/throttle-to-PAS
+
 
 Doc PAS ebikes.ca (Signal Types for Basic PAS Sensors) : 
 - https://ebikes.ca/learn/pedal-assist.html
+Doc PAS on pedelecforum.de
+- https://www.pedelecforum.de/forum/index.php?threads/funktionsweise-digitaler-pas-sensoren-details-fuer-interessierte.9539/
 
-Cyclurba (Soupaloignon) : 
+
+Discussion Cyclurba (Soupaloignon) : 
 - https://cyclurba.fr/forum/741850/arduino-l-assistance-d-un-vae.html?from=11&discussionID=31032&messageID=741850&rubriqueID=87
 - https://cyclurba.fr/forum/738995/fonctionnent-capteurs-pn-dalage.html?discussionID=5512
 
@@ -24,7 +28,7 @@ Other source : Pedelecs forum
 
 
 
-// -------- GPIO --------------
+// -------- GPIO Arduino Uno/Nano --------------
 
 const int THR_PIN = 0;   // -- THROTTLE A0
 
@@ -33,22 +37,22 @@ const int PAS_PIN = 2;   // -- PAS Hall D2, sans resistance (cf INPUT_PULLUP) + 
 const int LED_PIN = 13;  // -- LED et CONTROLER in (D13 = LED_BUILTIN)
 
 
-// -------- CONSTANTES PROG ------------------------
+// -------- SETTING CONSTANTS ------------------------
 
 
-// -- reglages throttle (cf debug Serial dans le loop) 
+// -- throttle setting (cf debug Serial in loop) 
 const int   tr_min    = 220;    // throttle min - marge ajoutee dans map() 
 const int   tr_max    = 856;    // throttle max - marge deduite dans map()
-const int   tr_marge  = 15;     // marge (margin) throttle avant envois signal PWM  et en deduction de tr_max  
+const int tr_margin   = 15;     // marge (margin) throttle avant envois signal PWM  et en deduction de tr_max  
 
 // -- reglages nb. d'aimants et simulation RPM pedalage
-const int   nb_poles  = 6;      // nb. d'aimants (nb. of magnets) sur le disque du PAS
-const int   slow_rpm  = 30;     // simulation RPM pedalier min
-const int   fast_rpm  = 70;     // simulation RPM pedalier max
+const int   nb_magnets  = 6;      // nb. d'aimants (nb. of magnets) sur le disque du PAS (default 6p)
+const int   slow_rpm  = 20;     // simulation RPM pedalier min (default 20 rpm)
+const int   fast_rpm  = 60;     // simulation RPM pedalier max (default 60 rpm)
 
-// -- reglage duty cycle signal High, cf doc ebikes.ca : https://ebikes.ca/learn/pedal-assist.html 
+// -- setting duty-cycle high signal, cf doc ebikes.ca : https://ebikes.ca/learn/pedal-assist.html 
 // -- attention var float : si nombre entier ajouter au moins une decimal .0 Par exemple 60% indiquer 60.0% !!
-const float duty_cycle = 56.70;  // % duty high signal (56.70% on my PAS, mode varied width, but 57.0% normaly Ok)
+const float duty_cycle = 56.70;  // % duty high (56.70% on my PAS, type varied width, but 57.0% (or 60.00% ?) must be Ok
 
 
 
@@ -57,8 +61,8 @@ const float duty_cycle = 56.70;  // % duty high signal (56.70% on my PAS, mode v
 // **************************************************************
 
 // ne pas enlever les decimales aux chiffres entiers !
-const int slow_pas = (1000.0 / (slow_rpm / 60.0 * nb_poles)) * (duty_cycle/100);   // Signal PAS high lent en ms, % duty_cycle
-const int fast_pas = (1000.0 / (fast_rpm / 60.0 * nb_poles)) * (duty_cycle/100);   // Signal PAS high rapide en ms, % duty_cycle
+const int slow_pas = (1000.0 / (slow_rpm / 60.0 * nb_magnets)) * (duty_cycle/100);   // Signal PAS high lent en ms, % duty_cycle
+const int fast_pas = (1000.0 / (fast_rpm / 60.0 * nb_magnets)) * (duty_cycle/100);   // Signal PAS high rapide en ms, % duty_cycle
 
 // calc ratio low (high/low), round 2 decimale
 const float t1 = duty_cycle / (100 - duty_cycle);
@@ -69,7 +73,7 @@ const float ratio_low = floor(100*t1+0.5)/100; // round decimal to 2 digit (10 f
 // -- ratio_low = percent / (100 - percent); // en duty high 56.75%  = ~1.30
 
 
-// -------- VARIABLES GLOBALES ----------------------
+// -------- GLOBAL VARIABLES ----------------------
 
 unsigned long start = 0;           // timer
 
@@ -89,7 +93,7 @@ void setup() {
     
     digitalWrite(LED_PIN, LOW);      // signal led/controleur sur Low au boot
     
-    // -- Interruption : appel "isr_pas" sur signal CHANGE  
+    // -- Interrupt pedaling : appel "isr_pas" sur signal CHANGE  
     attachInterrupt(digitalPinToInterrupt(PAS_PIN), isr_pas, CHANGE); 
     
     
@@ -106,7 +110,7 @@ void loop()
     
     
     // map val : Plus on appuie sur le throttle plus le signal PAS high doit etre court !
-    int duty = map(val, tr_min+tr_marge, tr_max-tr_marge, slow_pas, fast_pas);
+    int duty = map(val, tr_min+tr_margin, tr_max-tr_margin, slow_pas, fast_pas);
     
     //Serial.println(duty);             // debug duty
     //Serial.println(t1, 5);            // debug ratio
@@ -119,19 +123,19 @@ void loop()
     }
     
     // si throttle en fonction on simule un signal PAS, fréquence et duty selon throttle
-    if (val > tr_min + tr_marge) {
+    if (val > tr_min + tr_margin) {
         
         throt_on = true; 
         
         // Signal high
         start = millis();
         while (millis() - start <= duty) {
-            if (val > tr_min + tr_marge) digitalWrite(LED_PIN, HIGH);
+            if (val > tr_min + tr_margin) digitalWrite(LED_PIN, HIGH);
         }
         // Signal low ( ratio calcule dans constantes)
         start = millis();
         while (millis() - start <= duty / ratio_low) {
-            if (val > tr_min + tr_marge) digitalWrite(LED_PIN, LOW);
+            if (val > tr_min + tr_margin) digitalWrite(LED_PIN, LOW);
         }
     }
     else throt_on = false;
