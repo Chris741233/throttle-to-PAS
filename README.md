@@ -16,8 +16,8 @@ Régler les constantes en début de code \
 Adjust constants at the beginning of code
 
 - Calibrer les  min et max throttle en décommentant la ligne "Serial" dans le loop (le recommenter après)
-- Ajuster le marge de déclenchement "tr_marge"
-- Choisir le nb. d'aimants "nb_poles" sur votre disque de PAS 
+- Ajuster le marge de déclenchement "tr_margin"
+- Choisir le nb. d'aimants "nb_magnets" sur votre disque de PAS 
 - Choisir les RPM min et et max de simulation de pédalage (valable seulement si le controleur accèpte un PAS proportionel)
 - Adapter le duty-cycle high "duty_cycle" selon votre modèle de PAS (A ou B, voir plus bas)
 - That's all ;)
@@ -36,6 +36,11 @@ Adjust constants at the beginning of code
 **test Oscillo**
 <p align="left">
   <img src="./DOC/oscillo_60rpm.jpg" width="700" title="Oscillo">
+</p>
+
+**PAS testing**
+<p align="left">
+  <img src="./DOC/banc_test.jpg" width="400" title="PAS testing">
 </p>
 
 
