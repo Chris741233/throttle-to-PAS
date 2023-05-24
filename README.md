@@ -4,7 +4,10 @@ Using a throttle (thumb throttle or accelerator) to simulate pedaling on an e-bi
 
 Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un pédalage sur un e-bike.
   
-Code pour Aduino Nano/Uno, etc ... (signal +5V)
+Code pour Aduino Nano/Uno (signal +5V)
+
+**voir aussi** \
+[Button to PAS](https://github.com/Chris741233/button-to-PAS)
 
 ---
 
