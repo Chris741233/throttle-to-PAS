@@ -33,7 +33,7 @@ const int   nb_magnets  = 6;    // nb. of magnets to simul (default 6p)
 const int   slow_rpm  = 20;     // simul RPM pedaling min (default 20 rpm)
 const int   fast_rpm  = 60;     // simul RPM pedaling max,(default 60 rpm)
 
-const float duty_cycle = 56.70; // % duty-cycle (high signal)
+const float duty_cycle = 56.70; // % duty-cycle (high signal, % period)
 ```
 
 #### Wiring (Arduino Uno/Nano)
