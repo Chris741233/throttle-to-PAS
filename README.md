@@ -6,63 +6,61 @@ Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un 
   
 Code pour Aduino Nano/Uno (signal +5V)
 
-**voir aussi** \
-[Button to PAS](https://github.com/Chris741233/button-to-PAS)
+**see also** \
+**[Button to PAS (with cruise in option)](https://github.com/Chris741233/button-to-PAS)**
 
 ---
 
 #### Utilisation
 Régler les constantes en début de code \
-Adjust constants at the beginning of code
+*Adjust constants at the beginning of code*
 
-- Calibrer les  min et max throttle en décommentant la ligne "Serial" dans le loop (le recommenter après)
-- Ajuster le marge de déclenchement "tr_margin"
-- Choisir le nb. d'aimants "nb_magnets" sur votre disque de PAS 
+- Calibrer les  min et max throttle en décommentant la ligne *"debug Serial"* dans le loop (le recommenter après)
+- Ajuster le marge de déclenchement *"tr_margin"*
+- Choisir le nb. d'aimants *"nb_magnets"* sur votre disque de PAS 
 - Choisir les RPM min et et max de simulation de pédalage (valable seulement si le controleur accèpte un PAS proportionel)
-- Adapter le duty-cycle high "duty_cycle" selon votre modèle de PAS (A ou B, voir plus bas)
-- That's all ;)
+- Adapter le duty-cycle high *"duty_cycle"* selon votre modèle de PAS (A ou B, voir plus bas)
+- That's all :-)
 
-**Wiring (Arduino Uno/Nano)**
+#### Wiring (Arduino Uno/Nano)
 <p align="left">
-  <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinout">
+  <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinouts">
 </p>
 
 
-**Debug val throttle min-max**
+#### Debug val throttle min-max
 <p align="left">
-  <img src="./DOC/debug_val_throttle.jpg" width="500" title="Arduino pinout">
+  <img src="./DOC/debug_val_throttle.jpg" width="500" title="serial debug">
 </p>
 
-**test Oscillo**
+#### test Oscillo
 <p align="left">
   <img src="./DOC/oscillo_60rpm.jpg" width="700" title="Oscillo">
 </p>
 
-**PAS testing**
+#### PAS testing
 <p align="left">
   <img src="./DOC/banc_test.jpg" width="400" title="PAS testing">
 </p>
 
 
-**Doc on ebikes.ca** \
+#### Doc on ebikes.ca : 
 [Signal Types for Basic PAS Sensors](https://ebikes.ca/learn/pedal-assist.html)
 
 <p align="left">
   <img src="./DOC/PAS_Signal_Levels.jpg" width="700" title="Oscillo">
 </p>
 
-**Discussion sur le forum Cyclurba** \
+#### Discussion sur le forum Cyclurba :
 [Cyclurba](https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87)
 
-
----
-
-
-*Attention: La réglementation de certains pays n'autorise pas l'utilisation d'un accélérateur à plus de 6 km/h sans pédaler.*
+--- 
+#### Note
+  
+> *La réglementation de certains pays n'autorise pas l'utilisation d'un accélérateur à plus de 6 km/h sans pédaler.*
 *L'utilisation de ce code et schéma sont sous votre propre responsabilité !* 
 
-*Warning: The regulations of some countries do not allow the use of an accelerator at more than 6 km/h without pedaling.*
-*The use of this code and diagram is under your own responsibility!*
 
----
+> *The regulations of some countries do not allow the use of an accelerator at more than 6 km/h without pedaling.*
+*The use of this code and diagram is under your own responsibility!*
 
