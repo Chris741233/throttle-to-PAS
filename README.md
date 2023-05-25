@@ -22,6 +22,20 @@ Régler les constantes en début de code \
 - Adapter le duty-cycle high *"duty_cycle"* selon votre modèle de PAS (A ou B, voir plus bas)
 - That's all :-)
 
+```
+-- Setting ---
+
+const int   tr_min    = 220;    // throttle min  (see debug serial) 
+const int   tr_max    = 856;    // throttle max  (see debug serial) 
+const int tr_margin   = 15;     // margin before send PAS signal (+ tr_min and - tr_max ) 
+
+const int   nb_magnets  = 6;    // nb. of magnets to simul (default 6p)
+const int   slow_rpm  = 20;     // simul RPM pedaling min (default 20 rpm)
+const int   fast_rpm  = 60;     // simul RPM pedaling max,(default 60 rpm)
+
+const float duty_cycle = 56.70; // % duty-cycle (high signal)
+```
+
 #### Wiring (Arduino Uno/Nano)
 <p align="left">
   <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinouts">
