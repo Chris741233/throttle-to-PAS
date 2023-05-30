@@ -6,9 +6,9 @@ Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un 
   
 Code pour Aduino Nano/Uno (signal +5V)
 
-**see also** \
-**[Button to PAS (with cruise in option)](https://github.com/Chris741233/button-to-PAS)**
-
+**see also**  
+- [Button to PAS (with cruise in option)](https://github.com/Chris741233/button-to-PAS)
+- [PAS analyzer](https://github.com/Chris741233/PAS_analyzer)
 ---
 
 #### Utilisation
