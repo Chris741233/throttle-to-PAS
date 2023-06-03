@@ -1,4 +1,4 @@
-# Throttle to PAS
+# e-bike throttle to PAS converter
 Arduino e-bike throttle to PAS simulation and replication \
 Using a throttle (thumb throttle or accelerator) to simulate pedaling on an e-bike
 
