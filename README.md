@@ -6,9 +6,17 @@ Utilisation d'un throttle (gachette de pouce ou accélérateur) pour simuler un 
   
 Code pour Aduino Nano/Uno (signal +5V)
 
-**see also**  
+**see also** 
 - [Button to PAS (with cruise in option)](https://github.com/Chris741233/button-to-PAS)
+- [PAS to throttle converter](https://github.com/Chris741233/PAS_to_throttle)
 - [PAS analyzer](https://github.com/Chris741233/PAS_analyzer)
+---
+
+#### Wiring (Arduino Uno/Nano)
+<p align="left">
+  <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinouts">
+</p>
+
 ---
 
 #### Utilisation
@@ -35,12 +43,7 @@ const int   fast_rpm  = 60;     // simul RPM pedaling max,(default 60 rpm)
 
 const float duty_cycle = 56.70; // % duty-cycle (high signal, % period)
 ```
-
-#### Wiring (Arduino Uno/Nano)
-<p align="left">
-  <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinouts">
-</p>
-
+---
 
 #### Debug val throttle min-max
 <p align="left">
