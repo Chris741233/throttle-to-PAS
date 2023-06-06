@@ -14,7 +14,7 @@ Code pour Aduino Nano/Uno (signal +5V)
 
 **Discussion sur le forum Cyclurba**  
 [Cyclurba](https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87)  
-[video de Peter](https://cyclurba.fr/forum/forum_discussion.php?from=21&discussionID=31032&messageID=742019)
+[video de Peter (Youtube)](https://www.youtube.com/watch?v=A_oQwdZdAz4&t=2s)
 
 ---
 
