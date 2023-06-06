@@ -10,6 +10,12 @@ Code pour Aduino Nano/Uno (signal +5V)
 - [Button to PAS (with cruise in option)](https://github.com/Chris741233/button-to-PAS)
 - [PAS to throttle converter](https://github.com/Chris741233/PAS_to_throttle)
 - [PAS analyzer](https://github.com/Chris741233/PAS_analyzer)
+
+
+**Discussion sur le forum Cyclurba**  
+[Cyclurba](https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87)  
+[video de Peter](https://cyclurba.fr/forum/forum_discussion.php?from=21&discussionID=31032&messageID=742396&rubriqueID=87)
+
 ---
 
 #### Wiring (Arduino Uno/Nano)
@@ -68,8 +74,7 @@ const float duty_cycle = 56.70; // % duty-cycle (high signal, % period)
   <img src="./DOC/PAS_Signal_Levels.jpg" width="700" title="Oscillo">
 </p>
 
-#### Discussion sur le forum Cyclurba :
-[Cyclurba](https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87)
+
 
 --- 
 #### Note
