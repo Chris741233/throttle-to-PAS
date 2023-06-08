@@ -57,17 +57,17 @@ const float duty_cycle = 56.70; // % duty-cycle (high signal, % period)
 
 #### Debug val throttle min-max
 <p align="left">
-  <img src="./DOC/debug_val_throttle.jpg" width="500" title="serial debug">
+  <img src="./throttle_to_pas/img/debug_val_throttle.jpg" width="500" title="serial debug">
 </p>
 
 #### test Oscillo
 <p align="left">
-  <img src="./DOC/oscillo_60rpm.jpg" width="700" title="Oscillo">
+  <img src="./throttle_to_pas/img/oscillo_60rpm.jpg" width="700" title="Oscillo">
 </p>
 
 #### PAS testing
 <p align="left">
-  <img src="./DOC/banc_test.jpg" width="400" title="PAS testing">
+  <img src="./throttle_to_pas/img/banc_test.jpg" width="400" title="PAS testing">
 </p>
 
 
@@ -75,7 +75,7 @@ const float duty_cycle = 56.70; // % duty-cycle (high signal, % period)
 [Signal Types for Basic PAS Sensors](https://ebikes.ca/learn/pedal-assist.html)
 
 <p align="left">
-  <img src="./DOC/PAS_Signal_Levels.jpg" width="700" title="Oscillo">
+  <img src="./throttle_to_pas/img/PAS_Signal_Levels.jpg" width="700" title="Oscillo">
 </p>
 
 
