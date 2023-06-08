@@ -20,7 +20,11 @@ Code pour Aduino Nano/Uno (signal +5V)
 
 #### Wiring (Arduino Uno/Nano)
 <p align="left">
-  <img src="./DOC/throttle-diagram.png" width="500" title="Arduino pinouts">
+  <img src="./throttle_to_pas/img/throttle-diagram.jpg" width="700" title="Arduino pinouts">
+</p>
+
+<p align="left">
+  <img src="./throttle_to_pas/img/throttle-diagram_2.jpg" width="300" title="Arduino pinouts">
 </p>
 
 ---
